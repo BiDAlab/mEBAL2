@@ -1,13 +1,24 @@
 ![Sin titulo](http://atvs.ii.uam.es/atvs/github/mEBAL/mEBAL_ICONO1.jpg)
 ***
 # About
-We present mEBAL [1], a multimodal database for eye blink detection and attention level estimation. mEBAL is a database which is initially introduced in [arXiv technical report](https://arxiv.org/abs/2006.05327v2) and then accepted by the [22nd ACM International Conference on Multimodal Interaction](http://icmi.acm.org/2020/). 
 
-The eye blink frequency is related to the cognitive activity and automatic detectors of eye blinks have been proposed for many tasks including attention level estimation, analysis of neuro-degenerative diseases, deception recognition, drive fatigue detection, or face anti-spoofing. However, most existing databases and algorithms in this area are limited to experiments involving only a few hundred samples and individual sensors like face cameras. 
+mEBAL2 is a new multimodal database for eyeblink detection and attention level estimation obtained from an e-learning environment, a new upgraded version from the well-known database [mEBAL](https://github.com/BiDAlab/mEBAL). This database is the largest existing public eyeblink database, with 21,100 labeled image sequences (10,550 eyeblinks and 10,550 no-blink events) and students’ cognitive activity labels synchronized with all the eyeblink data from 180 different students, while conducting a number of e-learning tasks of varying difficulty or taking a real course on HTML initiation through the edX MOOC platform. **This information is avalible on this web [[Download Database](#instructions-for-downloading-mEBAL)].**
 
-The proposed mEBAL improves previous databases in terms of numbers samples in eye blink and cognitive information available.  In particular, **three different sensors** are simultaneously considered: **Near Infrared (NIR)** and **RGB cameras** to capture the face gestures and an **Electroencephalography (EEG) band** to capture the cognitive activity of the user and blinking events.
+mEBAL2 was introduced in [arXiv technical report](https://arxiv.org/abs/2309.07880v1) and is currently under consideration at the “Pattern Recognition Letters”.
 
-Regarding the size of mEBAL, it comprises **3,000 blink samples** and the corresponding **attention level** from **38 different students** while conducting a number of e-learning tasks of varying difficulty.**This information is avalible on this web [[Download Database](#instructions-for-downloading-mEBAL)].**
+mEBAL2 has improved previous databases in terms of sample numbers in eyeblink and cognitive information. In particular, **three different sensors** are simultaneously considered: **Near Infrared (NIR)** and **RGB cameras** to capture face gestures, also an **Electroencephalography (EEG)** band to capture the cognitive activity of the user and eyeblink events.
+
+Also, this new version of mEBAL comes with significant improvements:
+
+- Additional 120 users with 7.550 eye blink events, making it three times bigger, and more than 2,5 million frames recorded from 180 students. Furthermore, a new real
+e-learning environment has been added for monitoring purposes, specifically a MOOC.
+
+The following sections describe the motivation, activities, sensors, public database, and the mEBAL2 database will be shared with the community to move forward in this area:
+
+
+
+
+
 
 The following table shows the sensors and the information captured:
 
