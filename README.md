@@ -92,7 +92,7 @@ This means that is **8 times** larger than HUST-LEBW database, the existing data
 
 
 
-# Instructions for Downloading mEBAL
+# Instructions for Downloading mEBAL2
 
 1) [Download license agreement](http://atvs.ii.uam.es/atvs/files/mEBAL_License_Agreement.pdf), send by email one signed and scanned copy to **atvs@uam.es** according to the instructions given in point 2.
 
