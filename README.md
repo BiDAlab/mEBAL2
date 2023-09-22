@@ -29,7 +29,7 @@ The following table shows the sensors and the information captured:
 
 Eyeblink has proven to be a valuable indicator in various fields such as ocular activity, attention, fatigue, emotions, etc., for this reason, eyeblink detection based on image processing has become essential regarding applications involving human behavior analysis. 
 
-Eyeblink detection is a useful tool to improve e-learning platforms [3, 4] to get high-quality online education, for at least two reasons. **First, since the 70s, there are studies relating the eyeblink rate with cognitive activity like attention**. Recent research suggest that lower eyeblink rates can be associated with high attention periods, while higher eyeblink rates are related to low attention levels. **And second, blink detection can be used in the detection of fraud/cheating/lies** and combined with other features like heart rate, gaze tracking, micro-gestures or blood oxygen saturation, can improve the security of e-learning platforms.
+Eyeblink detection is a useful tool to improve e-learning platforms [3, 4] to get high-quality online education, for at least two reasons. **First, since the 70s, there are studies relating the eyeblink rate with cognitive activity like attention**. Recent research [5, 6] suggest that lower eyeblink rates can be associated with high attention periods, while higher eyeblink rates are related to low attention levels. **And second, blink detection can be used in the detection of fraud/cheating/lies** and combined with other features like heart rate, gaze tracking, micro-gestures or blood oxygen saturation, can improve the security of e-learning platforms.
 
 However, the state of the art demonstrates that public eyeblink detectors based on image processing are far from resolving the eyeblink detection problem. At the moment, there are very few public data-driven algorithms (e.g., neural networks), mainly because of the lack of large eyeblink databases. Most existing datasets useful for research in this area, have only a few hundred samples, representing a strong restriction to train data-driven approaches (e.g. deep learning). Also, current public databases restrict their samples to RGB cameras, without using other sensors that have proven to be useful in similar tasks such as NIR cameras in gaze tracking or iris and pupil detection. In the mEBAL2 [1] article it is demonstrated that the approaches trained with both spectra (visible and NIR) have a good generalization capacity for unseen scenarios, **showing the how useful the NIR** camaras can be.
 
@@ -120,6 +120,11 @@ This means that is **8 times** larger than HUST-LEBW database, the existing data
 + [3] Hernandez-Ortega, J.; Daza, R.; Morales, A.; Fierrez, J.; and Ortega Garcia, J. 2019. edBB: Biometrics and Behavior for Assessing Remote Education. In *AAAI Workshop on Artificial Intelligence for Education*. [[pdf](https://arxiv.org/pdf/1912.04786.pdf)]
 
 + [4] Daza, R.; Morales, A.; Tolosana, R.; Gomez, L. F.; Fierrez, J.; and Ortega-Garcia, J. 2023. edBB-Demo: Biometrics and Behavior Analysis for Online Educational Platforms. In *Proc. AAAI Conf. on Artificial Intelligence (Demonstration)*. [[pdf](https://arxiv.org/pdf/2211.09210.pdf)]
+
++ [5] Daza, R.; DeAlcala, D.; Morales, A.; Tolosana, R.; Cobos, R.; and Fierrez, J. 2022. ALEBk: Feasibility study of attention level estimation via blink detection
+applied to e-learning. In *Proc. AAAI Workshop on Artificial Intelligence for Education*. [[pdf](https://arxiv.org/pdf/2112.09165.pdf)]
+
++ [6] Daza, R.; Gomez, L. F.; Morales, A.; Fierrez, J.; Tolosana, R.; Cobos, R.; and Ortega-Garcia, J. 2023. MATT: Multimodal Attention Level Estimation for e-learning Platforms. In: *Proc. AAAI Workshop on Artificial Intelligence for Education*. [[pdf](https://arxiv.org/pdf/2301.09174.pdf)]
   
 + [3] Hernandez-Ortega, J.; Daza, R.; Morales, A.; Fierrez, J.; and Tolosana, R. 2020. Heart Rate Estimation from Face Videos for Student Assessment: Experiments on edBB. In *IEEE Computers, Software, and Applications Conference*. [[pdf](https://arxiv.org/pdf/2006.00825.pdf)]
 
