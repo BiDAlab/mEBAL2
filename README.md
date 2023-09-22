@@ -58,7 +58,7 @@ The tasks for both groups were designed with two goals. First, to generate chang
 
 # Sensors
 
-   We designed a multimodal acquisition framework to monitor cognitive and eye blink activity during the execution of online tasks based on the [edBB platform](https://github.com/BiDAlab/edBBdb) [3] for remote education assessment:
+mEBAL2 contains synchronized information from multiple sensors while the students use an interface designed for e-learning tasks. Therefore, a multimodal acquisition framework was designed to monitor cognitive and eyeblink activity based on the [edBB platform](https://github.com/BiDAlab/edBBdb) [3, 4], an e-learning platform for remote education assessment:
    
 ![Sin titulo](http://atvs.ii.uam.es/atvs/github/mEBAL/Framework_mEBAL2.jpg)
 
