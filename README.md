@@ -113,6 +113,7 @@ mEBAL2 is the largest eyeblink public database.
 
 # References
 
++ [1]  Daza, R.; Morales, A.; Fierrez, J.; Tolosana, R.; and Vera-Rodriguez, R. 2023. mEBAL2 Database and Benchmark: Image-based Multispectral Eyeblink Detection. *arXiv preprint* (currently under consideration at the “Pattern Recognition Letters”). [[pdf](https://arxiv.org/pdf/2309.07880v1.pdf)]
 
 + [2] Daza, R.; Morales, A.; Fierrez, J.; and Tolosana, R. 2020. mEBAL: A Multimodal Database for Eye Blink Detection and Attention Level Estimation. In *ACM International Conference on Multimodal Interaction*. [[pdf](https://arxiv.org/pdf/2006.05327v2.pdf)]
 
