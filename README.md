@@ -77,7 +77,7 @@ Therefore, mEBAL2 provides a dataset consisting of **540 long-duration videos** 
 
 Additionally, the new mEBAL2 contains variations on illuminations, poses, distances between user and camera, objects over the face (glasses, hair, hand occlusion, etc.), physical activity, and other naturally-occurring factors. The next figure shows some examples from mEBAL2.
 
-![Sin titulo](http://atvs.ii.uam.es/atvs/github/mEBAL/Examples_Blink3.jpg)
+![Sin titulo](https://github.com/BiDAlab/mEBAL2/blob/master/Images/mEBAL2_Examples.png)
 |:--:|
 | Different examples from mEBAL2. (top) Sequence images with variations in illumination, posing, and distance to the camera. (bottom) Examples of eyeblink and no-blink with RGB and NIR images.|
 
