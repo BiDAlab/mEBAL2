@@ -87,9 +87,11 @@ The eyeblinks were labeled using a semisupervised approach. For that labelling w
 
 The next table shows the most popular eyeblink detection databases:
 
-![Sin titulo](http://atvs.ii.uam.es/atvs/github/mEBAL/Table_eye_blink_detection_databases3.jpg)
+![Sin titulo](https://github.com/BiDAlab/mEBAL2/blob/master/Images/Table.jpg)
+|:--:|
+|Existing databases for Eye Blink detection.|
 
-This means that is **8 times** larger than HUST-LEBW database, the existing database with largest number of eye blinks. Data is critical to train end-to-end approaches such as those based on neural networks. Furthermore, **mEBAL is unique in to use 3 sensors and to include the attention level**.
+ 
 
 
 
