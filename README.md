@@ -1,4 +1,4 @@
-![Sin titulo]([http://atvs.ii.uam.es/atvs/github/mEBAL/mEBAL_ICONO1.jpg](https://github.com/BiDAlab/mEBAL2/blob/master/Images/mEBAL2_icon.jpg))
+![Sin titulo](https://github.com/BiDAlab/mEBAL2/blob/master/Images/mEBAL2_icon.jpg)
 ***
 # About
 
