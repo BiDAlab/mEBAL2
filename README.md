@@ -91,9 +91,8 @@ The next table shows the most popular eyeblink detection databases:
 |:--:|
 |Existing databases for Eye Blink detection.|
 
+mEBAL2 is the largest eyeblink public database.
  
-
-
 
 # Instructions for Downloading mEBAL2
 
@@ -126,9 +125,6 @@ applied to e-learning. In *Proc. AAAI Workshop on Artificial Intelligence for Ed
 
 + [6] Daza, R.; Gomez, L. F.; Morales, A.; Fierrez, J.; Tolosana, R.; Cobos, R.; and Ortega-Garcia, J. 2023. MATT: Multimodal Attention Level Estimation for e-learning Platforms. In: *Proc. AAAI Workshop on Artificial Intelligence for Education*. [[pdf](https://arxiv.org/pdf/2301.09174.pdf)]
   
-+ [3] Hernandez-Ortega, J.; Daza, R.; Morales, A.; Fierrez, J.; and Tolosana, R. 2020. Heart Rate Estimation from Face Videos for Student Assessment: Experiments on edBB. In *IEEE Computers, Software, and Applications Conference*. [[pdf](https://arxiv.org/pdf/2006.00825.pdf)]
-
-
 
 
 
