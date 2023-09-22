@@ -71,11 +71,15 @@ The following table shows the sensors and the information captured:
 
 # Database
 
-mEBAL comprises a total of 3,000 blink samples from both eyes acquired with 1 RGB and 2 NIR cameras. Each sample comprises 19 frames (around 600 ms.) for a total number of images of **342,000** (3,000 × 19 × 2 × 3). Aspects such as the user position and changes in the illumination were considered during the acquisition in order to simulate realistic e-learning scenarios. 11 out of the 38 students used glasses.
+mEBAL2 includes **21,100 events** (10,500 blinks and 10,500 no-blinks) from 180 students/sessions. The session duration varies from 15 to 40 minutes. Each eyeblink event has 19 frames using three cameras: one RGB, and two NIR cameras. This database contains 2,405,400 frames (3 cameras × 19 frames × 21,100 events × 2 eyes), making it **the largest existing eyeblink database**.
 
-mEBAL was collected in a constrained environment, but it is rich in pose, illumination changes, and other naturally-occurring factors. It can be seen in the next figure:
+Therefore, mEBAL2 provides a dataset consisting of **540 long-duration videos** (1 RGB video and 2 NIR videos per session). Each video comes along with the facial bounding box information, 68 facial landmarks, and cropped eye regions for each frame. Furthermore, the dataset includes timestamps for both eyeblink and no-eyeblink events and a total of 21,100 cropped samples. Additionally, the dataset provides EEG band information, including attention level, meditation level, 5 electroencephalographic channels, and eyeblink intensity measures.
+
+Additionally, the new mEBAL2 contains variations on illuminations, poses, distances between user and camera, objects over the face (glasses, hair, hand occlusion, etc.), physical activity, and other naturally-occurring factors. The next figure shows some examples from mEBAL2.
+
 ![Sin titulo](http://atvs.ii.uam.es/atvs/github/mEBAL/Examples_Blink3.jpg)
-
+|:--:|
+| Different examples from mEBAL2. (top) Sequence images with variations in illumination, posing, and distance to the camera. (bottom) Examples of eyeblink and no-blink with RGB and NIR images.|
 
 The mEBAL dataset was obtained from the **raw data provided in the [edBBdb](https://github.com/BiDAlab/edBBdb)** [3]. The eye blink and attention level information was labelled following a semi-supervised method. First, eye blink candidates were selected using the EEG band signals (eye blink strength is an attribute provided by the EEG band SDK). Second, we made a manual refinement of the eye blink samples detected by the band to eliminate false positives. Once the eye blink samples were validated, we stored the 9 frames previous and posterior to the eye blink event (19 frames in total for each eye blink). These frames can be used to exploit the temporal information proposed in some approaches of the literature. Finally, we used facial landmark detection to track the eye position.
 
