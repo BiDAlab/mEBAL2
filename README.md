@@ -2,7 +2,7 @@
 ***
 # About
 
-mEBAL2 is a new multimodal database for eyeblink detection and attention level estimation obtained from an e-learning environment, a new upgraded version from the well-known database [mEBAL](https://github.com/BiDAlab/mEBAL) [1]. This database is the largest existing public eyeblink database, with 21,100 labeled image sequences (10,550 eyeblinks and 10,550 no-blink events) and students’ cognitive activity labels synchronized with all the eyeblink data from 180 different students, while conducting a number of e-learning tasks of varying difficulty or taking a real course on HTML initiation through the edX MOOC platform. **This information is avalible on this web [[Download Database](#instructions-for-downloading-mEBAL)].**
+mEBAL2 [1] is a new multimodal database for eyeblink detection and attention level estimation obtained from an e-learning environment, a new upgraded version from the well-known database [mEBAL](https://github.com/BiDAlab/mEBAL) [2]. This database is the largest existing public eyeblink database, with 21,100 labeled image sequences (10,550 eyeblinks and 10,550 no-blink events) and students’ cognitive activity labels synchronized with all the eyeblink data from 180 different students, while conducting a number of e-learning tasks of varying difficulty or taking a real course on HTML initiation through the edX MOOC platform. **This information is avalible on this web [[Download Database](#instructions-for-downloading-mEBAL)].**
 
 mEBAL2 was introduced in [arXiv technical report](https://arxiv.org/abs/2309.07880v1) and is currently under consideration at the “Pattern Recognition Letters”.
 
@@ -23,31 +23,36 @@ The following sections describe the motivation, activities, sensors, public data
 The following table shows the sensors and the information captured:
 
 ![Sin titulo](http://atvs.ii.uam.es/atvs/github/mEBAL/Table1.jpg)
-<br/>The following sections describe the motivation, the activities designed, the sensors, the public database and share mEBAL database with the community to advance in this area:
+<br/>
 
 # Motivation
 
-The main motivation  of this work is  **the improvement of the virtual education** using e-learnig platforms. Virtual education technologies are growing up, with a market reaching a turnover around 240.000 million dollars. 
-**E-learning platforms** are important tools to get high quality online education. They allow to capture student information to better understand the student behavior and conditions and this information can be used to create personalized environments. Information such as the heart rate [2], the emotional state, or the **cognitive activity** can be used to improve e-learning platforms.
-Undoubtedly, e-learning platforms will benefit significantly by exploiting the **attention level** of the student. This could be used to: **i)** adapt dynamically the environment and content  based on the attention level, and **ii)** improve the educational materials and resources with a posterior analysis of the e-learning sessions (e.g. detecting the type of contents more appropriate for a specific student).
+Eyeblink has proven to be a valuable indicator in various fields such as ocular activity, attention, fatigue, emotions, etc., for this reason, eyeblink detection based on image processing has become essential regarding applications involving human behavior analysis. 
 
-**Since the 70s there are studies relating the eye blink rate with cognitive activity like attention**. The studies suggest that **lower eye blink rates** can be associated to **high attention** periods while **higher eye blink rates** are related to **low attention levels**. Therefore, in this context, automatic eye blink detection can be a tool for estimating the attention level of the students and improving e-learning platforms.
+Eyeblink detection is a useful tool to improve e-learning platforms [3, 4] to get high-quality online education, for at least two reasons. **First, since the 70s, there are studies relating the eyeblink rate with cognitive activity like attention**. Recent research suggest that lower eyeblink rates can be associated with high attention periods, while higher eyeblink rates are related to low attention levels. **And second, blink detection can be used in the detection of fraud/cheating/lies** and combined with other features like heart rate, gaze tracking, micro-gestures or blood oxygen saturation, can improve the security of e-learning platforms.
 
-For this reasons, we hope that mEBAL will be valuable to the scientific community thanks to the multimodal nature: **Cognitive Activity and Eye Blink detection**.
+However, the state of the art demonstrates that public eyeblink detectors based on image processing are far from resolving the eyeblink detection problem. At the moment, there are very few public data-driven algorithms (e.g., neural networks), mainly because of the lack of large eyeblink databases. Most existing datasets useful for research in this area, have only a few hundred samples, representing a strong restriction to train data-driven approaches (e.g. deep learning). Also, current public databases restrict their samples to RGB cameras, without using other sensors that have proven to be useful in similar tasks such as NIR cameras in gaze tracking or iris and pupil detection. In the mEBAL2 [1] article it is demonstrated that the approaches trained with both spectra (visible and NIR) have a good generalization capacity for unseen scenarios, **showing the how useful the NIR** camaras can be.
+
+For this reason, we hope that mEBAL2 will be valuable for the scientific community, thanks to the multimodal nature: **Cognitive Activity and EyeBlink Detection**.
+
 
 
 # Tasks
 
+The database was divided into two groups. The first group of 60 students did a series of tasks that were carefully designed to reach certain goals, and the second group of 120 students did a real lesson from a MOOC, entitled “Introduction to Development of Web Applications” (WebApp), which is available in the [edX platform](https://www.edx.org/learn/web-development/universidad-autonoma-de-madrid-introduccion-al-desarrollo-de-aplicaciones-web?index=product&queryID=48c101d7ce1f73f79e2beaecb358ec7b&position=1&linked_from=autocomplete&c=autocomplete). 
 
-The activities designed to conform the database consist of 8 different tasks that can be categorized in the following three groups:
- 
- - **Enrollment form:** name and surname, ID number, nationality, e-mail address, etc. (low level of attention is expected);
- 
- - **Writing questions:** these questions are oriented to measure the students’ cognitive abilities under different situations such as solving logical problems, describing images, crosswords, finding differences, etc. (increasing level of attention is expected)
- 
- - **Multiple choice questions:** aimed to detect the students’ attention and focus levels (high level of attention is expected).
+The tasks for both groups were designed with two goals. First, to generate changes in the students’ cognitive activity such as mental load, attention, visual attention, etc., looking to cause variations of the eyeblink rate. And second, to generate a realistic setting of online assessments. The tasks can be categorized into five groups:
 
-The questions are selected from popular riddles and they present different levels of difficulty. The interface is designed to ensure data from different nature: free text typing (writing questions), fixed text typing (enrollment form), mouse movement (multiple choice questions), visual attention (describing images and finding differences), etc.
+- **Enrollment form**: Student’s data are obtained here. This is a simple task that targets a relaxed state with attention levels between normal and low. 
+
+- **Logical questions**: These require more complex interactions, and some of them include crosswords and mathematical problems, for the first group. For the MOOC course, some of the activities involve writing HTML codes and generating more efficient ones.
+
+- **Visual tasks**: These demand visual attention from the students under different situations, such as: watching prerecorded classes, describing images, detecting errors in HTML code, etc. 
+
+- **Reading tasks**: Reading documents has proven to have an impact on eyeblink rates and it’s highly common in e-learning environments. 
+
+- **Multiple choice questions**: These are essential to help evaluate the students on assessment platforms and most Learning Management Systems provide templates to perform these assessments.
+
 
 
 
@@ -93,7 +98,7 @@ This means that is **8 times** larger than HUST-LEBW database, the existing data
 
 2) Send an email to **atvs@uam.es**, as follows:
 
-   *Subject:* **[DATABASE: mEBAL]**
+   *Subject:* **[DATABASE: mEBAL2]**
 
    Body: Your name, e-mail, telephone number, organization, postal mail, purpose for which you will use the database, time and date at which you sent the email with the signed      license agreement.
 
@@ -106,12 +111,17 @@ This means that is **8 times** larger than HUST-LEBW database, the existing data
 
 # References
 
-+ [1] Daza, R.; Morales, A.; Fierrez, J.; and Tolosana, R. 2020. mEBAL: A Multimodal Database for Eye Blink Detection and Attention Level Estimation. In *ACM International Conference on Multimodal Interaction*. [[pdf](https://arxiv.org/pdf/2006.05327v2.pdf)]
 
-+ [2] Hernandez-Ortega, J.; Daza, R.; Morales, A.; Fierrez, J.; and Tolosana, R. 2020. Heart Rate Estimation from Face Videos for Student Assessment: Experiments on edBB. In *IEEE Computers, Software, and Applications Conference*. [[pdf](https://arxiv.org/pdf/2006.00825.pdf)]
-
++ [2] Daza, R.; Morales, A.; Fierrez, J.; and Tolosana, R. 2020. mEBAL: A Multimodal Database for Eye Blink Detection and Attention Level Estimation. In *ACM International Conference on Multimodal Interaction*. [[pdf](https://arxiv.org/pdf/2006.05327v2.pdf)]
 
 + [3] Hernandez-Ortega, J.; Daza, R.; Morales, A.; Fierrez, J.; and Ortega Garcia, J. 2019. edBB: Biometrics and Behavior for Assessing Remote Education. In *AAAI Workshop on Artificial Intelligence for Education*. [[pdf](https://arxiv.org/pdf/1912.04786.pdf)]
+
++ [4] Daza, R.; Morales, A.; Tolosana, R.; Gomez, L. F.; Fierrez, J.; and Ortega-Garcia, J. 2023. edBB-Demo: Biometrics and Behavior Analysis for Online Educational Platforms. In *Proc. AAAI Conf. on Artificial Intelligence (Demonstration)*. [[pdf](https://arxiv.org/pdf/2211.09210.pdf)]
+  
++ [3] Hernandez-Ortega, J.; Daza, R.; Morales, A.; Fierrez, J.; and Tolosana, R. 2020. Heart Rate Estimation from Face Videos for Student Assessment: Experiments on edBB. In *IEEE Computers, Software, and Applications Conference*. [[pdf](https://arxiv.org/pdf/2006.00825.pdf)]
+
+
+
 
 
 # Contact:
