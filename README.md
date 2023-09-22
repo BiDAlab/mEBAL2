@@ -15,16 +15,6 @@ e-learning environment has been added for monitoring purposes, specifically a MO
 
 The following sections describe the [motivation](#Motivation), [tasks](#Tasks), [sensors](#Sensors), [public database](#Database), and the mEBAL2 database will be shared with the community to move forward in this area:
 
-
-
-
-
-
-The following table shows the sensors and the information captured:
-
-![Sin titulo](http://atvs.ii.uam.es/atvs/github/mEBAL/Table1.jpg)
-<br/>
-
 # Motivation
 
 Eyeblink has proven to be a valuable indicator in various fields such as ocular activity, attention, fatigue, emotions, etc., for this reason, eyeblink detection based on image processing has become essential regarding applications involving human behavior analysis. 
@@ -69,6 +59,11 @@ The acquisition setup uses the following sensors:
 - **An Intel RealSense (model D435i)**, which contains **1 RGB** and **2 NIR cameras**. The NIR cameras are monochrome and sensitive in the visible spectrum and NIR, following the sensitivity curve of the CMOS sensors. The 3 cameras are configured to 30 Hz (one frame every 33ms) and 1280 × 720 resolution. It's known that an average blink takes 100ms to 400ms, therefore, an eyeblink can take between 3 to 13 frames.
 
 - An **EEG headset** by NeuroSky, which measures the power spectrum density of 5 electroencephalographic channels (α, β, γ, δ, θ). EEG measures the voltage signals produced usually by synaptic excitations of the dendrites of pyramidal cells in the top layer of the brain cortex. Eyeblinks introduce artifacts that can be easily recognized in EEG signals. In this dataset, the EEG band was used to generate the initial ground truth data necessary to label the eyeblink events. **We have made a manual refinement of these eyeblink candidates detected by the band to eliminate false positives**. These refined eyeblinks will be used as eyeblink groundtruth. The sampling rate of the band is 1 Hz.
+
+The following table shows the sensors and the information captured:
+
+![Sin titulo](http://atvs.ii.uam.es/atvs/github/mEBAL/Table1.jpg)
+<br/>
 
 
 
