@@ -13,7 +13,7 @@ Also, this new version of mEBAL comes with significant improvements:
 - Additional 120 users with 7.550 eye blink events, making it three times bigger, and more than 2,5 million frames recorded from 180 students. Furthermore, a new real
 e-learning environment has been added for monitoring purposes, specifically a MOOC.
 
-The following sections describe the [motivation](#Motivation), activities, sensors, public database, and the mEBAL2 database will be shared with the community to move forward in this area:
+The following sections describe the [motivation](#Motivation), [tasks](#Tasks), [sensors](#Sensors), [public database](#Database), and the mEBAL2 database will be shared with the community to move forward in this area:
 
 
 
