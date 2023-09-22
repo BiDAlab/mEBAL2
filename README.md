@@ -64,14 +64,12 @@ mEBAL2 contains synchronized information from multiple sensors while the student
 |:--:|
 | Setup used on mEBAL2 and the eyeblink diagram of the acquisition from mEBAL2 |
 
+The acquisition setup uses the following sensors:
 
-   The acquisition setup consisted of the next components: 
+- **An Intel RealSense (model D435i)**, which contains **1 RGB** and **2 NIR cameras**. The NIR cameras are monochrome and sensitive in the visible spectrum and NIR, following the sensitivity curve of the CMOS sensors. The 3 cameras are configured to 30 Hz (one frame every 33ms) and 1280 × 720 resolution. It's known that an average blink takes 100ms to 400ms, therefore, an eyeblink can take between 3 to 13 frames.
 
-   - An **EEG headset** by NeuroSky that captures 5 channels of electroencephalographic information **(𝛼, 𝛽,𝛾, 𝛿, 𝜃)**. These signals provide temporal information related to the cognitive activity of the student. The sensor also provides a temporal sequence with the eye blink strength. The sampling rate of the band is 1 Hz. The EEG band is used to capture the **cognitive activity of the student** and **the eye blink candidates**. **We have made a manual refinement of these eye blink candidates detected by the band to eliminate false positives**. These refined eye blinks will be used as eye blink groundtruth.
-  
-   - An **Intel RealSense** (model D435i), which comprises **1 RGB** and **2 NIR cameras**. It is  configured to 30 Hz, one frame every 33ms. It's known that an average blink takes 100ms to 400ms, therefore, an eye blink can take between 3 to 13 frames.
-  
-We used facial landmark detection to track the eyes position and classify the images as blink or no-blink based on the eye blink groundtruth.
+- An **EEG headset** by NeuroSky, which measures the power spectrum density of 5 electroencephalographic channels (α, β, γ, δ, θ). EEG measures the voltage signals produced usually by synaptic excitations of the dendrites of pyramidal cells in the top layer of the brain cortex. Eyeblinks introduce artifacts that can be easily recognized in EEG signals. In this dataset, the EEG band was used to generate the initial ground truth data necessary to label the eyeblink events. **We have made a manual refinement of these eyeblink candidates detected by the band to eliminate false positives**. These refined eyeblinks will be used as eyeblink groundtruth. The sampling rate of the band is 1 Hz.
+
 
 
 
