@@ -96,6 +96,8 @@ mEBAL2 is the largest eyeblink public database.
 
 # Instructions for Downloading mEBAL2
 
+**IMPORTANT: work under review. We are preparing the dataset to be released once accepted.**
+
 1) [Download license agreement](https://github.com/BiDAlab/mEBAL2/blob/master/License/mEBAL2_License_Agreement.pdf), send by email one signed and scanned copy to **atvs@uam.es** according to the instructions given in point 2.
 
 2) Send an email to **atvs@uam.es**, as follows:
