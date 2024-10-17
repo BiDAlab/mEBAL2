@@ -62,7 +62,7 @@ The acquisition setup uses the following sensors:
 
 The following table shows the sensors and the information captured:
 
-![Sin titulo](http://atvs.ii.uam.es/atvs/github/mEBAL/Table1.jpg)
+![Sin titulo](https://bidalab.eps.uam.es/static/github/mEBAL/Table1.jpg)
 |:--:|
 | Sensors included in the mEBAL2 framework |
 
