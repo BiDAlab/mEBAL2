@@ -98,7 +98,7 @@ mEBAL2 is the largest eyeblink public database.
 
 # Instructions for Downloading mEBAL2
 
-📢 The original version of this database, mEBAL, is available alongside the updated version, mEBAL2, for comparison. You can access mEBAL at the following [link](https://github.com/BiDAlab/mEBAL2).
+📢 The original version of this database, mEBAL, is available alongside the updated version, mEBAL2, for comparison. You can access mEBAL at the following [link](https://github.com/BiDAlab/mEBAL) or follow the instructions below to download mEBAL2.
 
 1) [Download license agreement](https://github.com/BiDAlab/mEBAL2/blob/master/License/mEBAL2_License_Agreement.pdf), send by email one signed and scanned copy to **atvs@uam.es** according to the instructions given in point 2.
 
