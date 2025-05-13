@@ -12,7 +12,7 @@ mEBAL2 has improved previous databases in terms of sample numbers in eye blink a
 
 Also, this new version of mEBAL comes with significant improvements:
 
-- Additional 120 users with 7.550 eye blink events, making it three times bigger, and more than 2,5 million frames recorded from 180 students. Furthermore, a new real
+- An additional 142 users and 7,550 eye blink events have been included, making the dataset three times larger, with over 2.5 million frames recorded from 180 students in total. Furthermore, a new real
 e-learning environment has been added for monitoring purposes, specifically a MOOC.
 
 The following sections describe the [motivation](#Motivation), [tasks](#Tasks), [sensors](#Sensors), [public database](#Database), and the mEBAL2 database will be shared with the community to move forward in this area:
