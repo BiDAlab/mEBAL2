@@ -45,6 +45,29 @@ The tasks for both groups were designed with two goals. First, to generate chang
 - **Multiple choice questions**: These are essential to help evaluate the students on assessment platforms and most Learning Management Systems provide templates to perform these assessments.
 
 
+<h3 align="center">Distribution of Learners by Gender, Age, and Glasses Usage</h3>
+
+<div align="center">
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Subcategory</th>
+      <th>Percentage</th>
+      <th>Number of Learners</th>
+      <th>Average Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Gender</td><td>Male</td><td>55.55%</td><td>100</td><td>22.93</td></tr>
+    <tr><td></td><td>Female</td><td>44.45%</td><td>80</td><td>21.35</td></tr>
+    <tr><td>Vision</td><td>Wearing Glasses</td><td>32.22%</td><td>58</td><td>---</td></tr>
+    <tr><td>Overall Averages</td><td>Overall Average Age</td><td>---</td><td>---</td><td>22.23</td></tr>
+  </tbody>
+</table>
+
+</div>
 
 
 # Sensors
