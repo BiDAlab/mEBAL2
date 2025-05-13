@@ -44,32 +44,6 @@ The tasks for both groups were designed with two goals. First, to generate chang
 
 - **Multiple choice questions**: These are essential to help evaluate the students on assessment platforms and most Learning Management Systems provide templates to perform these assessments.
 
-
-<h3 align="center">Distribution of Learners by Gender, Age, and Glasses Usage</h3>
-
-<div align="center">
-
-<table>
-  <thead>
-    <tr>
-      <th>Category</th>
-      <th>Subcategory</th>
-      <th>Percentage</th>
-      <th>Number of Learners</th>
-      <th>Average Age</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Gender</td><td>Male</td><td>55.55%</td><td>100</td><td>22.93</td></tr>
-    <tr><td></td><td>Female</td><td>44.45%</td><td>80</td><td>21.35</td></tr>
-    <tr><td>Vision</td><td>Wearing Glasses</td><td>32.22%</td><td>58</td><td>---</td></tr>
-    <tr><td>Overall Averages</td><td>Overall Average Age</td><td>---</td><td>---</td><td>22.23</td></tr>
-  </tbody>
-</table>
-
-</div>
-
-
 # Sensors
 
 mEBAL2 contains synchronized information from multiple sensors while the students use an interface designed for e-learning tasks. Therefore, a multimodal acquisition framework was designed to monitor cognitive and eyeblink activity based on the [edBB platform](https://github.com/BiDAlab/edBBdb) [3, 4], an e-learning platform for remote education assessment:
@@ -96,6 +70,32 @@ The following table shows the sensors and the information captured:
 # Database
 
 mEBAL2 includes **21,100 events** (10,500 blinks and 10,500 no-blinks) from 180 students/sessions. The session duration varies from 15 to 40 minutes. Each eyeblink event has 19 frames using three cameras: one RGB, and two NIR cameras. This database contains 2,405,400 frames (3 cameras × 19 frames × 21,100 events × 2 eyes), making it **the largest existing eyeblink database**.
+
+The following table summarises the demographic distribution of the 180 participants in the mEBAL2 dataset:
+
+<h3 align="center">Distribution of Learners by Gender, Age, and Glasses Usage</h3>
+
+<div align="center">
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Subcategory</th>
+      <th>Percentage</th>
+      <th>Number of Learners</th>
+      <th>Average Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Gender</td><td>Male</td><td>55.55%</td><td>100</td><td>22.93</td></tr>
+    <tr><td></td><td>Female</td><td>44.45%</td><td>80</td><td>21.35</td></tr>
+    <tr><td>Vision</td><td>Wearing Glasses</td><td>32.22%</td><td>58</td><td>---</td></tr>
+    <tr><td>Overall Averages</td><td>Overall Average Age</td><td>---</td><td>---</td><td>22.23</td></tr>
+  </tbody>
+</table>
+
+</div>
 
 Therefore, mEBAL2 provides a dataset consisting of **540 long-duration videos** (1 RGB video and 2 NIR videos per session). **Each video comes along with the facial bounding box information, 68 facial landmarks, and cropped eye regions for each frame. Furthermore, the dataset includes timestamps for both eyeblink and no-eyeblink events and a total of 21,100 cropped samples. Additionally, the dataset provides EEG band information, including attention level, meditation level, 5 electroencephalographic channels, and eyeblink intensity measures.**
 
